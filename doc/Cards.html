@@ -68,7 +68,7 @@
 
       
         <section id="moduledoc">
-          <p>  Provides methods for creating and handling a deck of cards</p>
+          <pre><code class="elixir">  Provides methods for creating and handling a deck of cards</code></pre>
 
         </section>
       
@@ -115,8 +115,9 @@
     <a href="#deal/2">deal(deck, hand_size)</a>
   </div>
   
-    <div class="summary-synopsis"><p>Divides a deck into a hand and the remainder of the deck.
- The ‘hand_size’ argument indicates how many cards should be in the hand</p>
+    <div class="summary-synopsis"><p>Divides a deck into a hand and the remainder of the deck.</p>
+<pre><code class="elixir">  The &#39;hand_size&#39; argument indicates how many cards should be in the hand.</code></pre>
+<h2>Examples</h2>
 </div>
   
 </div>
@@ -187,7 +188,7 @@
     
   </div>
   <section class="docstring">
-    <p>  Return a list of strings represent a deck of playing cards</p>
+    <pre><code class="elixir">  Return a list of strings represent a deck of playing cards</code></pre>
 
   </section>
 </div>
@@ -220,8 +221,17 @@
     
   </div>
   <section class="docstring">
-    <p> Divides a deck into a hand and the remainder of the deck.
- The ‘hand_size’ argument indicates how many cards should be in the hand.</p>
+    <pre><code class="elixir">  Divides a deck into a hand and the remainder of the deck.
+  The &#39;hand_size&#39; argument indicates how many cards should be in the hand.</code></pre>
+<h2 id="deal/2-examples" class="section-heading">
+  <a href="#deal/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="elixir">iex(6)&gt; deck = Cards.create_deck)
+iex(7)&gt; {hand, deck} = Cards.deal(deck, 1)
+iex(8)&gt; hand
+[&quot;Ace of Spades&quot;]</code></pre>
 
   </section>
 </div>
